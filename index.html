@@ -394,7 +394,7 @@
     transition:background .2s ease, border-color .2s ease, transform .15s ease;
   }
   .phone-card:hover{ background:rgba(154,205,50,0.16); border-color:rgba(154,205,50,0.32); transform:translateX(2px); }
-  .phone-card .dot{ width:26px; height:26px; border-radius:7px; background:linear-gradient(150deg, var(--bronze), var(--gold)); flex-shrink:0; }
+  .phone-card .dot{ width:26px; height:26px; border-radius:7px; background:linear-gradient(150deg, var(--bronze), var(--gold)); background-size:cover; background-position:center; flex-shrink:0; }
   .phone-card .txt{ font-size:10px; color:var(--cream-soft); line-height:1.3; }
   .phone-card .txt b{ display:block; font-family:'Cormorant Garamond', serif; font-size:12.5px; color:var(--cream); font-weight:600; }
   .app-hint{ margin-top:14px; font-size:11px; color:var(--cream-faint); }
@@ -593,15 +593,15 @@
           <div class="phone-notch"></div>
           <div class="phone-scroll">
             <div class="phone-app-title">App Gilda</div>
-            <a class="phone-card" href="https://ko-fi.com/s/bd0aecbdaa" target="_blank" rel="noopener"><div class="dot"></div><div class="txt"><b>Il Meccanismo</b>autosabotaggio</div></a>
-            <a class="phone-card" href="https://ko-fi.com/s/c8964c27d8" target="_blank" rel="noopener"><div class="dot"></div><div class="txt"><b>Non sentirsi abbastanza</b>riconoscimento</div></a>
-            <a class="phone-card" href="https://ko-fi.com/s/12e6f4363d" target="_blank" rel="noopener"><div class="dot"></div><div class="txt"><b>La paura</b>lettura del segnale</div></a>
-            <a class="phone-card" href="https://ko-fi.com/s/e8c2cd9c99" target="_blank" rel="noopener"><div class="dot"></div><div class="txt"><b>I confini</b>dove finisci tu</div></a>
-            <a class="phone-card" href="https://ko-fi.com/s/8c06cb9b7c" target="_blank" rel="noopener"><div class="dot"></div><div class="txt"><b>Il corpo non mente</b>ascolto</div></a>
-            <a class="phone-card" href="https://ko-fi.com/s/c97d2674fa" target="_blank" rel="noopener"><div class="dot"></div><div class="txt"><b>Le amicizie</b>selezione naturale</div></a>
-            <a class="phone-card" href="https://ko-fi.com/s/59a008ab39" target="_blank" rel="noopener"><div class="dot"></div><div class="txt"><b>Il lavoro e il denaro</b>soglia e scopo</div></a>
-            <a class="phone-card" href="https://ko-fi.com/s/57001ba5de" target="_blank" rel="noopener"><div class="dot"></div><div class="txt"><b>L'amore dopo le delusioni</b>riaprirsi</div></a>
-            <a class="phone-card" href="https://ko-fi.com/s/676d29c358" target="_blank" rel="noopener"><div class="dot"></div><div class="txt"><b>Stare bene da soli</b>casa dentro</div></a>
+            <a class="phone-card" href="https://ko-fi.com/s/bd0aecbdaa" target="_blank" rel="noopener"><div class="dot" style="background-image:url('img/il-meccanismo.png')"></div><div class="txt"><b>Il Meccanismo</b>autosabotaggio</div></a>
+            <a class="phone-card" href="https://ko-fi.com/s/c8964c27d8" target="_blank" rel="noopener"><div class="dot" style="background-image:url('img/non-sentirsi-abbastanza.png')"></div><div class="txt"><b>Non sentirsi abbastanza</b>riconoscimento</div></a>
+            <a class="phone-card" href="https://ko-fi.com/s/12e6f4363d" target="_blank" rel="noopener"><div class="dot" style="background-image:url('img/la-paura.png')"></div><div class="txt"><b>La paura</b>lettura del segnale</div></a>
+            <a class="phone-card" href="https://ko-fi.com/s/e8c2cd9c99" target="_blank" rel="noopener"><div class="dot" style="background-image:url('img/i-confini.png')"></div><div class="txt"><b>I confini</b>dove finisci tu</div></a>
+            <a class="phone-card" href="https://ko-fi.com/s/8c06cb9b7c" target="_blank" rel="noopener"><div class="dot" style="background-image:url('img/il-corpo-non-mente.png')"></div><div class="txt"><b>Il corpo non mente</b>ascolto</div></a>
+            <a class="phone-card" href="https://ko-fi.com/s/c97d2674fa" target="_blank" rel="noopener"><div class="dot" style="background-image:url('img/le-amicizie.png')"></div><div class="txt"><b>Le amicizie</b>selezione naturale</div></a>
+            <a class="phone-card" href="https://ko-fi.com/s/59a008ab39" target="_blank" rel="noopener"><div class="dot" style="background-image:url('img/il-lavoro-e-il-denaro.png')"></div><div class="txt"><b>Il lavoro e il denaro</b>soglia e scopo</div></a>
+            <a class="phone-card" href="https://ko-fi.com/s/57001ba5de" target="_blank" rel="noopener"><div class="dot" style="background-image:url('img/lamore-dopo-le-delusioni.png')"></div><div class="txt"><b>L'amore dopo le delusioni</b>riaprirsi</div></a>
+            <a class="phone-card" href="https://ko-fi.com/s/676d29c358" target="_blank" rel="noopener"><div class="dot" style="background-image:url('img/stare-bene-da-soli.png')"></div><div class="txt"><b>Stare bene da soli</b>casa dentro</div></a>
           </div>
         </div>
         <p class="app-hint">Tocca un percorso per aprirlo su Ko-fi.</p>
@@ -628,8 +628,8 @@
       <div class="eyebrow"><span class="eyebrow-line"></span><span>Prima di andare</span></div>
       <h2 class="section-title">Cosa vorresti<br>trovare <em>qui.</em></h2>
       <p class="lead">I prossimi percorsi nascono anche da quello che mi scrivi. Un tema che ti riguarda, un formato che preferiresti, tipo un video invece di un percorso scritto.</p>
-      <form class="suggestion-form" onsubmit="return false;">
-        <input type="text" placeholder="Un tema che ti interessa" aria-label="Tema">
+      <form class="suggestion-form" id="suggestion-form" onsubmit="return false;">
+        <input type="text" id="tema-input" placeholder="Un tema che ti interessa" aria-label="Tema">
         <div class="custom-select" id="formato-select">
           <button type="button" class="custom-select-trigger placeholder" id="formato-trigger" aria-haspopup="listbox" aria-expanded="false">
             <span id="formato-trigger-label">Formato che preferiresti</span>
@@ -642,10 +642,10 @@
           </ul>
         </div>
         <input type="text" id="formato-altro-input" class="formato-altro-input" placeholder="Dicci di più su cosa intendi" aria-label="Specifica il formato" style="display:none;">
-        <textarea placeholder="Raccontami di più, se vuoi" aria-label="Dettagli" rows="3"></textarea>
-        <button type="submit">Invia il tuo suggerimento</button>
+        <textarea id="dettagli-input" placeholder="Raccontami di più, se vuoi" aria-label="Dettagli" rows="3"></textarea>
+        <button type="submit" id="suggestion-submit">Invia il tuo suggerimento</button>
       </form>
-      <p class="form-note">Bozza non collegata a un invio reale, da decidere dove far confluire questi contatti.</p>
+      <p class="form-note" id="form-note">I tuoi suggerimenti arrivano direttamente a Gilda.</p>
     </div>
   </section>
 
@@ -715,6 +715,49 @@
     if (!formatoSelect.contains(e.target)) {
       formatoSelect.classList.remove('open');
       formatoTrigger.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  // Invio form suggerimenti
+  const suggestionForm = document.getElementById('suggestion-form');
+  const suggestionSubmit = document.getElementById('suggestion-submit');
+  const formNote = document.getElementById('form-note');
+  const SUGGESTION_ENDPOINT = 'https://qnhnsjqzheyiacfmmmbe.supabase.co/functions/v1/suggestion-form';
+
+  suggestionForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const tema = document.getElementById('tema-input').value.trim();
+    const dettagli = document.getElementById('dettagli-input').value.trim();
+    const formatoAttivo = formatoOptions.querySelector('li.active');
+    const formato = formatoAttivo ? formatoAttivo.textContent : '';
+    const formatoAltro = formatoAltroInput.style.display !== 'none' ? formatoAltroInput.value.trim() : '';
+
+    if (!tema && !dettagli) {
+      formNote.textContent = 'Scrivi almeno un tema o qualche dettaglio prima di inviare.';
+      return;
+    }
+
+    suggestionSubmit.disabled = true;
+    suggestionSubmit.textContent = 'Invio in corso...';
+
+    try {
+      const resp = await fetch(SUGGESTION_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ tema, formato, formatoAltro, dettagli }),
+      });
+      if (!resp.ok) throw new Error('Invio non riuscito');
+      suggestionForm.reset();
+      formatoAltroInput.style.display = 'none';
+      formatoTriggerLabel.textContent = 'Formato che preferiresti';
+      formatoTrigger.classList.add('placeholder');
+      formatoOptions.querySelectorAll('li').forEach((o) => o.classList.remove('active'));
+      formNote.textContent = 'Grazie, il tuo suggerimento è arrivato a Gilda.';
+    } catch (err) {
+      formNote.textContent = 'Qualcosa non ha funzionato, riprova tra poco.';
+    } finally {
+      suggestionSubmit.disabled = false;
+      suggestionSubmit.textContent = 'Invia il tuo suggerimento';
     }
   });
 
