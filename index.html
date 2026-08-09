@@ -643,6 +643,10 @@
         </div>
         <input type="text" id="formato-altro-input" class="formato-altro-input" placeholder="Dicci di più su cosa intendi" aria-label="Specifica il formato" style="display:none;">
         <textarea id="dettagli-input" placeholder="Raccontami di più, se vuoi" aria-label="Dettagli" rows="3"></textarea>
+        <div>
+          <input type="email" id="email-input" placeholder="La tua email (facoltativa)" aria-label="Email">
+          <p style="font-size:11px; color:var(--cream-faint); margin-top:6px; font-style:italic;">Non è obbligatoria. Lasciala solo se vuoi una risposta o essere avvisata quando il prodotto sarà pronto.</p>
+        </div>
         <button type="submit" id="suggestion-submit">Invia il tuo suggerimento</button>
       </form>
       <p class="form-note" id="form-note">I tuoi suggerimenti arrivano direttamente a Gilda.</p>
@@ -728,6 +732,7 @@
     e.preventDefault();
     const tema = document.getElementById('tema-input').value.trim();
     const dettagli = document.getElementById('dettagli-input').value.trim();
+    const email = document.getElementById('email-input').value.trim();
     const formatoAttivo = formatoOptions.querySelector('li.active');
     const formato = formatoAttivo ? formatoAttivo.textContent : '';
     const formatoAltro = formatoAltroInput.style.display !== 'none' ? formatoAltroInput.value.trim() : '';
@@ -744,7 +749,7 @@
       const resp = await fetch(SUGGESTION_ENDPOINT, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ tema, formato, formatoAltro, dettagli }),
+        body: JSON.stringify({ tema, formato, formatoAltro, dettagli, email }),
       });
       if (!resp.ok) throw new Error('Invio non riuscito');
       suggestionForm.reset();
